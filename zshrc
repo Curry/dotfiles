@@ -61,7 +61,8 @@ zinit light-mode for \
   mafredri/zsh-async \
   atclone'dircolors -b LS_COLORS > clrs.zsh' \
     atpull'%atclone' pick'clrs.zsh' nocompile'!' \
-    atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' trapd00r/LS_COLORS
+    atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' trapd00r/LS_COLORS \
+  pick'misc/quitcd/quitcd.zsh' sbin make jarun/nnn
 
 zinit atload'!source ~/.p10k.zsh' lucid nocd for \
   romkatv/powerlevel10k
