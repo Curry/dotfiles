@@ -1,0 +1,21 @@
+[core]
+  excludesfile = ~/.gitignore_global
+  autocrlf = input
+[user]
+  name = Akaash Suresh
+  email = casa.akaash@gmail.com
+	signingkey = 102A5B3405A58933
+[color]
+  ui = true
+[push]
+  default = simple
+[diff]
+  tool = nvim -d
+[difftool]
+  prompt = false
+[rerere]
+  enabled = true
+  autoupdate = true
+[init]
+[commit]
+	gpgsign = true

@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+xsetroot -cursor_name left_ptr
+sxhkd &
+~/.fehbg &
+polybar -c ~/.config/polybar/config.ini main &
+picom --experimental-backends &
+redshift &
+
+bspc monitor -d 1 2 3 4 5 6
+
+bspc config border_width         0
+bspc config window_gap           15
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Chromium desktop="^1"
+bspc rule -a firefox desktop="^1"
+bspc rule -a Spotify desktop="^5"
+bspc rule -a Nemo state=floating
+bspc rule -a kitty -1 state=floating
+
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+bspc config super mod4
+bspc config pointer_action1 move
+bspc config pointer_action2 none
+bspc config pointer_action3 resize_corner
+bspc config focus_follows_pointer true
+
+bspc config presel_feedback_color \#aaaaaa
