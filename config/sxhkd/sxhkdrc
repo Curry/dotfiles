@@ -9,6 +9,9 @@ super + Return
 super + e
   code
 
+super + d
+  $HOME/.local/bin/wm.dev
+
 # GNOME System Monitor
 ctrl + shift + Escape
 	gnome-system-monitor

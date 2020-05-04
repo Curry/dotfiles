@@ -7,7 +7,7 @@ export HISTSIZE=10000000
 export SAVEHIST=10000000
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-export PATH="$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.local/bin:$PATH"
 
 setopt histverify
 setopt extendedhistory
@@ -101,6 +101,8 @@ alias la='ls -lag --time-style=iso --group-directories-first'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias qmku='gcm && glum && gp && gcd && grbm && gpf'
 alias gfix='gaa && fix && gpf'
+alias yng='cd ~/dev/lost-ng && yarn start'
+alias ynest='cd ~/dev/lost-nest && yarn start:dev'
 
 gli() {
   gaa

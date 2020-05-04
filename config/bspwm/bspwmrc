@@ -6,8 +6,10 @@ sxhkd &
 polybar -c ~/.config/polybar/config.ini main &
 picom --experimental-backends &
 redshift &
+dunst &
 
-bspc monitor -d 1 2 3 4 5 6
+bspc monitor DP-2 -d 1 2 3 4 5 6
+bspc monitor DP-0 -d 7 8
 
 bspc config border_width         0
 bspc config window_gap           15
@@ -17,16 +19,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config automatic_scheme     alternate
 
-bspc rule -a Chromium desktop="^1"
-# bspc rule -a firefox desktop="^1"
 bspc rule -a Spotify desktop="^5"
 bspc rule -a Nemo state=floating
-bspc rule -a kitty -1 state=floating
-
-bspc rule -a Code:code -o node='@^1:^1:/1'
-bspc rule -a firefox:Navigator -o node='@^1:^1:/2/1'
-bspc rule -a ng:ng -o node='@^1:^1:/2/2/1'
-bspc rule -a nest:nest -o node='@^1:^1:/2/2/2'
 
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
@@ -38,11 +32,3 @@ bspc config pointer_action3 resize_corner
 bspc config focus_follows_pointer true
 
 bspc config presel_feedback_color \#aaaaaa
-
-bspc wm -l /home/akaash/.dotfiles/state.json
-bspc wm -o
-
-code &
-kitty --class ng --detach &
-kitty --class nest --detach &
-firefox &
