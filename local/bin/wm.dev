@@ -1,5 +1,8 @@
 #! /bin/bash
 
+bspc query -N -d 1 | xargs -i sh -c 'bspc node -f {} && bspc node -c'
+bspc query -N -d 7 | xargs -i sh -c 'bspc node -f {} && bspc node -c'
+sleep 1
 bspc desktop -f '^1'
 
 bspc rule -a Code:code -o node=@^1:^1:/1
@@ -11,7 +14,6 @@ bspc rule -a firefox:Devtools -o node=@^2:^1:/2
 
 bspc wm -l /home/akaash/.dotfiles/state.json
 bspc wm -o
-# bspc query -T --desktop 1 | jq '{ one: .root.firstChild.client.instanceName, two: .root.secondChild.firstChild.client.className, three: .root.secondChild.secondChild.firstChild.client.className, four: .root.secondChild.secondChild.secondChild.client.className }'
 code &
 firefox -devtools &
 kitty --class term --detach

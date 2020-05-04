@@ -1,12 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/zsh
 
-xsetroot -cursor_name left_ptr
-sxhkd &
-~/.fehbg &
-polybar -c ~/.config/polybar/config.ini main &
-picom --experimental-backends &
-redshift &
-dunst &
+startup.wm
 
 bspc monitor DP-2 -d 1 2 3 4 5 6
 bspc monitor DP-0 -d 7 8

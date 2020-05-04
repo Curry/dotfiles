@@ -1,14 +1,4 @@
 #! /bin/zsh
-export TERM='xterm-256color'
-export VISUAL=nvim
-export EDITOR="$VISUAL"
-export HISTFILE=~/.zsh_history
-export HISTSIZE=10000000
-export SAVEHIST=10000000
-export ZSH_AUTOSUGGEST_USE_ASYNC=1
-export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-export PATH="$HOME/.yarn/bin:$HOME/.local/bin:$PATH"
-
 setopt histverify
 setopt extendedhistory
 setopt histignorealldups
@@ -61,8 +51,7 @@ zinit light-mode for \
   mafredri/zsh-async \
   atclone'dircolors -b LS_COLORS > clrs.zsh' \
     atpull'%atclone' pick'clrs.zsh' nocompile'!' \
-    atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' trapd00r/LS_COLORS \
-  pick'misc/quitcd/quitcd.zsh' sbin make jarun/nnn
+    atload'zstyle ":completion:*" list-colors "${(s.:.)LS_COLORS}"' trapd00r/LS_COLORS
 
 zinit atload'!source ~/.p10k.zsh' lucid nocd for \
   romkatv/powerlevel10k

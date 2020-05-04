@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+xsetroot -cursor_name left_ptr
+killall -q sxhkd
+sxhkd &
+~/.fehbg &
+killall -qw polybar
+polybar -c ~/.config/polybar/config.ini main &
+polybar -c ~/.config/polybar/config.ini secondary &
+killall -q picom
+picom --experimental-backends &
+killall -qw redshift
+redshift &
+killall -qw dunst
+dunst &
