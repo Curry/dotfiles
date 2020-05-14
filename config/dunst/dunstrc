@@ -62,19 +62,19 @@
   context = ctrl+shift+period
 
 [urgency_low]
-  msg_urgency = low
-  background = "#3C3836"
-	foreground = "#665C54"
-	timeout= 4
+  background = "#2E3440"
+  foreground = "#E5E9F0"
+	frame_color = "#607d8b"
+  timeout = 3
 
 [urgency_normal]
-	msg_urgency = normal
-	background = "#504945"
-	foreground = "#D5C4A1"
-	timeout = 4
+  background = "#2E3440"
+  foreground = "#E5E9F0"
+	frame_color = "#607d8b"
+  timeout = 5
 
 [urgency_critical]
-	msg_urgency = critical
-	background = "#D65D0E"
-	foreground = "#EBDBB2"
-	timeout = 0
+  background = "#2E3440"
+  foreground = "#E5E9F0"
+	frame_color = "#607d8b"
+  timeout = 0

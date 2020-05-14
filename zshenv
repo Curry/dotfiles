@@ -9,3 +9,4 @@ export SAVEHIST=10000000
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
 export PATH="$HOME/.yarn/bin:$HOME/.local/bin:$PATH"
+export GPG_TTY=$(tty)
