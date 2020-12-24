@@ -1,5 +1,6 @@
 #! /bin/zsh
 
+export ANDROID_HOME=/opt/android-sdk
 export TERM='xterm-256color'
 export VISUAL=nvim
 export EDITOR="$VISUAL"
@@ -8,5 +9,5 @@ export HISTSIZE=10000000
 export SAVEHIST=10000000
 export ZSH_AUTOSUGGEST_USE_ASYNC=1
 export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
-export PATH="$HOME/.yarn/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.local/bin:$PATH:$HOME/.dotnet/tools"
 export GPG_TTY=$(tty)

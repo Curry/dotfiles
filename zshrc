@@ -62,8 +62,7 @@ zinit as'null' wait'1' lucid from'gh-r' for \
   mv'tl-* -> tl' fbin'tl' ryanmjacobs/tl
 
 zinit as'null' wait'1' lucid for \
-  fbin'bin/git-dsf;bin/diff-so-fancy' zdharma/zsh-diff-so-fancy \
-  fbin rupa/v
+  fbin'bin/git-dsf;bin/diff-so-fancy' zdharma/zsh-diff-so-fancy
 
 zinit wait lucid for \
   changyuheng/fz \

@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 xsetroot -cursor_name left_ptr
+xrandr --output DVI-D-1 --off --output DP-1 --off --output DP-2 --mode 3440x1440 --rate 120 --pos 0x480 --rotate normal --output HDMI-1 --off --output DP-3 --mode 1920x1080 --rate 144 --pos 3440x0 --rotate left
 killall -q sxhkd
 sxhkd &
 ~/.fehbg &
@@ -8,7 +9,7 @@ killall -qw polybar
 polybar -c ~/.config/polybar/config.ini main &
 polybar -c ~/.config/polybar/config.ini secondary &
 killall -q picom
-picom --experimental-backends &
+# picom &
 killall -qw redshift
 redshift &
 killall -qw dunst

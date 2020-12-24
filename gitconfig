@@ -4,7 +4,7 @@
 [user]
   name = Akaash Suresh
   email = casa.akaash@gmail.com
-	signingkey = 102A5B3405A58933
+  signingkey = 7C0ADDFFDCB0D7D8
 [color]
   ui = true
 [push]
@@ -18,4 +18,4 @@
   autoupdate = true
 [init]
 [commit]
-	gpgsign = true
+  gpgsign = true
